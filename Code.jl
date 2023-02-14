@@ -235,10 +235,6 @@ function SingleIterationCLL(;n=20,d=2,r=0.1,T=Float64)
 
     return TheCLL
 end
-
-
-# THERE IS A BUG. AT SMALL ELEMENT NUMBERS, I.E. n = 20, sometimes solutions do not match! RUN MULTIPLE TIMES (x10)
-
 println("If the solution is correct then the sum of all values (ijd) should be very close to equal")
 
 function PlotTest(;n=10,d=2,NSIM = 10)
